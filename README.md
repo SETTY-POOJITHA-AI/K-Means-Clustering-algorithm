@@ -23,7 +23,8 @@ obtain the kmean clustering for 2 classes.
 predict the cluster groupm of  applicant income and loanamount.
 
 ## Program:
-```import pandas as pd
+```
+import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 import seaborn as sns
@@ -41,14 +42,14 @@ plt.xlabel('Income')
 plt.ylabel('Loan')
 plt.show()
 
-kmean =KMeans(n_clusters=4)
+kmean =KMeans(n_clusters=3)
 kmean.fit(x)
 
 print('Clusters Centers:', kmean.cluster_centers_)
 print('Labels:', kmean.labels_)
 
-predicted_class = kmean.predict([[9000,120]])
-print('The cluster group for Applicant Income 9000 and Loanamount 150 :' ,predicted_class)
+predicted_class = kmean.predict([[1000,100]])
+print('The cluster group for Applicant Income 1000 and Loanamount 100 :' ,predicted_class)
 
 
 ```
